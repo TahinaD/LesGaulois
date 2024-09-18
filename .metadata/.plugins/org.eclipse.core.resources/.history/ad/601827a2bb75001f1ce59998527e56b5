@@ -1,0 +1,17 @@
+//TODO Auto-generated method stub
+
+package personnages;
+
+public class Gaulois {
+	public String getNom() {
+		return nom;
+	}
+	public Gaulois(String nom, int force) {
+		this.nom = nom;
+		this.force = force;
+	}
+	private String nom;
+	private int force;
+	private int effetPotion = 1;
+
+}

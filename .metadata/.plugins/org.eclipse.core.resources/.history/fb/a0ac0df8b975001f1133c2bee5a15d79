@@ -1,0 +1,8 @@
+package personnages;
+
+public class Gaulois {
+	private String nom;
+	private Int force;
+	private Int effetPotion = 1;
+
+}
