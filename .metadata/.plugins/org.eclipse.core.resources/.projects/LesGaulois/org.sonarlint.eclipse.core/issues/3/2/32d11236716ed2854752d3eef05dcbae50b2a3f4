@@ -1,0 +1,10 @@
+
+V	java:S106"+Replace this use of System.out by a logger.(…ˆŒÃH’RMAJORZ
+CODE_SMELL
+L
+java:S2119"Save and re-use this "Random".(¼ÝÅf8¥º¤þ¡2H“RCRITICALZBUG
+m
+java:S4973*"<Strings and Boxed types should be compared using "equals()".(Õ¦ßüÿÿÿÿ8žÎ…ÿ¡2H”RMAJORZBUG
+·
+java:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8³žìþ¡2H—RCRITICALZ
+CODE_SMELL

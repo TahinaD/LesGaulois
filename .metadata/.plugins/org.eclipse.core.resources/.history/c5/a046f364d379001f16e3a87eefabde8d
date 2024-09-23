@@ -1,0 +1,22 @@
+package personnages;
+
+public class Village {
+	private String nom;
+	private Chef chef;
+	private int nbVillageois;
+	private Gaulois[] villageois = 0;
+
+	public Village(String nom, int nbVillageois, int nbVillageoisMaximum) {
+		this.nom = nom;
+		this.nbVillageois = nbVillageois;
+		villageois = new Gaulois[nbVillageoisMaximum];
+	}
+	
+	public void setChef(Chef chef) { 
+		this.chef = chef; 
+	}
+
+	public String getNom() {
+		return nom;
+	}
+}

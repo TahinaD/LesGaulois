@@ -32,13 +32,5 @@ public class Village {
 		Village village = new Village("Village des Irréductibles", 30);
 		//Gaulois gaulois = village.trouverHabitant(30);
 		//Le nombre de villageois va de 0 à 30 exclu
-		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
-		Gaulois asterix = new Gaulois("Astérix", 8);
-		village.setChef(abraracourcix);
-		village.ajouterHabitant(asterix);
-//		Gaulois gaulois = village.trouverHabitant(1); 
-//		System.out.println(gaulois);
-//      abraracourcix est de classe Chef et non Gaulois, 
-//      qui est le type pris en paramètre par ajouterHabitant().
 	}
 }

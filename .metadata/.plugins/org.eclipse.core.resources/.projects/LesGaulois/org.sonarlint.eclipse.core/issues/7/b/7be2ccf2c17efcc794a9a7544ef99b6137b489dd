@@ -1,0 +1,11 @@
+
+†
+java:S1450"SRemove the "chef" field and declare it as a local variable in the relevant methods.(ÛÖâ‹8Ù‡Ñÿ¡2HúRMINORZ
+CODE_SMELL
+n	java:S125!"<This block of commented-out lines of code should be removed.(¼÷ƒ­8€˜ûÿ¡2H°RMAJORZ
+CODE_SMELL
+[
+java:S1068"(Remove this unused "chef" private field.(ÛÖâ‹8Ù‡Ñÿ¡2HûRMAJORZ
+CODE_SMELL
+s	java:S125'"<This block of commented-out lines of code should be removed.(Ú‹™¿øÿÿÿÿ8ñ‰˜€¢2HÐRMAJORZ
+CODE_SMELL
