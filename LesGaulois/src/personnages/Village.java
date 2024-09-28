@@ -27,18 +27,28 @@ public class Village {
 	public Gaulois trouverHabitant(int numero) {
 		return villageois[numero];
 	}
+
+	public void afficherVillageois() {
+		System.out.println("Dans le village du chef " + chef.getNom() + " vivent les l√©gendaires gaulois :");
+		for (int indiceVillageois = 0 ; indiceVillageois < nbVillageois ; indiceVillageois++) {
+			System.out.println("- " + villageois[indiceVillageois].getNom());
+		}
+	}
 	
 	public static void main(String[] args) {
-		Village village = new Village("Village des IrrÈductibles", 30);
+		Village village = new Village("Village des IrrÔøΩductibles", 30);
 		//Gaulois gaulois = village.trouverHabitant(30);
-		//Le nombre de villageois va de 0 ‡ 30 exclu
+		//Le nombre de villageois va de 0 ÔøΩ 30 exclu
 		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
-		Gaulois asterix = new Gaulois("AstÈrix", 8);
+		Gaulois asterix = new Gaulois("AstÔøΩrix", 8);
+		Gaulois obelix = new Gaulois("ObÔøΩlix", 25);
 		village.setChef(abraracourcix);
 		village.ajouterHabitant(asterix);
+		village.ajouterHabitant(obelix);
+		village.afficherVillageois();
 //		Gaulois gaulois = village.trouverHabitant(1); 
 //		System.out.println(gaulois);
 //      abraracourcix est de classe Chef et non Gaulois, 
-//      qui est le type pris en paramËtre par ajouterHabitant().
+//      qui est le type pris en paramÔøΩtre par ajouterHabitant().
 	}
 }
