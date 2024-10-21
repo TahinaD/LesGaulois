@@ -89,7 +89,9 @@ public class Romain {
 		}
 		parler("Ma force est de " + this.force + ", et la force du coup est de " + forceCoup 
 				+ "\nMais heureusement, grace à mon équipement sa force est diminué de " + resistanceEquipement + "!");
-		forceCoup -= resistanceEquipement;
+		if (resistanceEquipement < forceCoup) {
+			forceCoup -= resistanceEquipement;
+		}
 		return forceCoup;
 	}
 

@@ -34,15 +34,26 @@ public class Gaulois {
 
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
-		trophees = romain.recevoirCoup((force / 3) * effetPotion);
-		for (int i = 0; trophees != null && i < trophees.length; i++, nbTrophees++) {
-			this.trophees[nbTrophees] = trophees[i];
+		Equipement[] nvTrophees = romain.recevoirCoup((force / 3) * effetPotion);
+		for (int i = 0; nvTrophees != null && i < nvTrophees.length; i++, nbTrophees++) {
+				trophees[nbTrophees] = nvTrophees[i];
 		}
 	}
 
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
 		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois dï¿½cuplï¿½e.");
+	}
+	
+	public void faireUneDonnation(Musee musee) {
+		parler("Je donne au musee tous mes trophees :");
+		int tropheeActuel = 0;
+		while (nbTrophees > 0) {
+			musee.donnerTrophees(this, trophees[tropheeActuel]);
+			System.out.println(" - " + trophees[tropheeActuel]);
+			nbTrophees--;
+			tropheeActuel++;
+		}
 	}
 
 	@Override
